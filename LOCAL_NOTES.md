@@ -37,7 +37,7 @@
 ```
 npm install prettier --save-dev --save-exact
 ```
-
+- Language server
 
 
 
