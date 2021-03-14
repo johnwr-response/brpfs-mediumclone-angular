@@ -42,15 +42,21 @@ npm install prettier --save-dev --save-exact
 ### Section: Registration
 - Register module
 ```
-md auth
-md auth/components
-md auth/components/register
-ni register.component.ts -type file
-ni register.component.scss -type file
-ni register.component.html -type file
+md src/app/auth
+md src/app/auth/components
+md src/app/auth/components/register
+ni src/app/auth/components/register/register.component.ts -type file
+ni src/app/auth/components/register/register.component.scss -type file
+ni src/app/auth/components/register/register.component.html -type file
 ```
 - Register layout
+- Installing NgRx
 ```
+yarn add @ngrx/store
+md src/app/auth/store
+ni src/app/auth/store/actionTypes.ts -type file
+ni src/app/auth/store/actions.ts -type file
+
 ```
 
 ### Section: Authentication
