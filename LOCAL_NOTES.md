@@ -49,6 +49,9 @@ ni register.component.ts -type file
 ni register.component.scss -type file
 ni register.component.html -type file
 ```
+- Register layout
+```
+```
 
 ### Section: Authentication
 
