@@ -39,10 +39,16 @@ npm install prettier --save-dev --save-exact
 ```
 - Language server
 
-
-
-
 ### Section: Registration
+- Register module
+```
+md auth
+md auth/components
+md auth/components/register
+ni register.component.ts -type file
+ni register.component.scss -type file
+ni register.component.html -type file
+```
 
 ### Section: Authentication
 
