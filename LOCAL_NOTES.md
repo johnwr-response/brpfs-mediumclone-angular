@@ -61,6 +61,13 @@ ni src/app/auth/store/actions.ts -type file
 ```
 yarn add @ngrx/store-devtools
 ```
+- Creating auth interfaces
+```
+md src/app/shared/types
+ni src/app/shared/types/currentUser.interface.ts -type file
+md src/app/auth/types
+ni src/app/auth/types/registerRequest.interface.ts -type file
+```
 
 ### Section: Authentication
 
