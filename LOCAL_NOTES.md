@@ -73,6 +73,11 @@ ni src/app/auth/types/registerRequest.interface.ts -type file
 ni src/app/auth/types/authState.interface.ts -type file
 ni src/app/auth/store/reducers.ts -type file
 ```
+- Creating selectors
+```
+ni src/app/auth/store/selectors.ts -type file
+ni src/app/shared/types/appState.interface.ts -type file
+```
 
 ### Section: Authentication
 
