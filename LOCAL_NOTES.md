@@ -56,7 +56,10 @@ yarn add @ngrx/store
 md src/app/auth/store
 ni src/app/auth/store/actionTypes.ts -type file
 ni src/app/auth/store/actions.ts -type file
-
+```
+- Installing Redux Devtools
+```
+yarn add @ngrx/store-devtools
 ```
 
 ### Section: Authentication
