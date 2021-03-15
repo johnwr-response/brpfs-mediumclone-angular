@@ -68,6 +68,11 @@ ni src/app/shared/types/currentUser.interface.ts -type file
 md src/app/auth/types
 ni src/app/auth/types/registerRequest.interface.ts -type file
 ```
+- Adding auth reducer
+```
+ni src/app/auth/types/authState.interface.ts -type file
+ni src/app/auth/store/reducers.ts -type file
+```
 
 ### Section: Authentication
 
