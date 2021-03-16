@@ -96,6 +96,14 @@ yarn add @ngrx/effects
 ```
 ni src/app/shared/types/backendErrors.interface.ts -type file
 ```
+- Backend error messages
+```
+md src/app/shared/modules/backendErrorMessages/components/backendErrorMessages
+ni src/app/shared/modules/backendErrorMessages/backendErrorMessages.module.ts -type file
+ni src/app/shared/modules/backendErrorMessages/components/backendErrorMessages/backendErrorMessages.component.ts -type file
+ni src/app/shared/modules/backendErrorMessages/components/backendErrorMessages/backendErrorMessages.component.html -type file
+ni src/app/shared/modules/backendErrorMessages/components/backendErrorMessages/backendErrorMessages.component.scss -type file
+```
 
 ### Section: Authentication
 
