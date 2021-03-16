@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core'
 import {BrowserModule} from '@angular/platform-browser'
 import {StoreModule} from '@ngrx/store'
+import {HttpClientModule} from '@angular/common/http'
 import {StoreDevtoolsModule} from '@ngrx/store-devtools'
 
 import {AppRoutingModule} from './app-routing.module'
@@ -12,6 +13,7 @@ import {environment} from 'src/environments/environment'
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     AuthModule,
     StoreModule.forRoot({}),

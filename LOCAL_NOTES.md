@@ -78,6 +78,12 @@ ni src/app/auth/store/reducers.ts -type file
 ni src/app/auth/store/selectors.ts -type file
 ni src/app/shared/types/appState.interface.ts -type file
 ```
+- Register service
+```
+md src/app/auth/services
+ni src/app/auth/services/auth.service.ts -type file
+ni src/app/auth/types/authResponse.interface.ts -type file
+```
 
 ### Section: Authentication
 
