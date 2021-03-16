@@ -117,6 +117,13 @@ ni src/app/auth/types/loginRequest.interface.ts -type file
 ni src/app/auth/store/actions/login.action.ts -type file
 ni src/app/auth/store/effects/login.effect.ts -type file
 ```
+- Login component
+```
+md src/app/auth/components/login
+ni src/app/auth/components/login/login.component.ts -type file
+ni src/app/auth/components/login/login.component.scss -type file
+ni src/app/auth/components/login/login.component.html -type file
+```
 
 ### Section: Feed
 
