@@ -84,6 +84,14 @@ md src/app/auth/services
 ni src/app/auth/services/auth.service.ts -type file
 ni src/app/auth/types/authResponse.interface.ts -type file
 ```
+- Register effects
+```
+md src/app/auth/store/actions
+ni src/app/auth/store/actions/register.action.ts -type file
+md src/app/auth/store/effects
+ni src/app/auth/store/effects/register.effect.ts -type file
+yarn add @ngrx/effects
+```
 
 ### Section: Authentication
 
