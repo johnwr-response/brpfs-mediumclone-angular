@@ -111,6 +111,12 @@ ni src/app/shared/services/persistence.service.ts -type file
 ```
 
 ### Section: Authentication
+- Login store
+```
+ni src/app/auth/types/loginRequest.interface.ts -type file
+ni src/app/auth/store/actions/login.action.ts -type file
+ni src/app/auth/store/effects/login.effect.ts -type file
+```
 
 ### Section: Feed
 
