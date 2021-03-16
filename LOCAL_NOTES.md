@@ -104,6 +104,11 @@ ni src/app/shared/modules/backendErrorMessages/components/backendErrorMessages/b
 ni src/app/shared/modules/backendErrorMessages/components/backendErrorMessages/backendErrorMessages.component.html -type file
 ni src/app/shared/modules/backendErrorMessages/components/backendErrorMessages/backendErrorMessages.component.scss -type file
 ```
+- Persistence service
+```
+md src/app/shared/services
+ni src/app/shared/services/persistence.service.ts -type file
+```
 
 ### Section: Authentication
 
