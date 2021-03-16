@@ -92,6 +92,10 @@ md src/app/auth/store/effects
 ni src/app/auth/store/effects/register.effect.ts -type file
 yarn add @ngrx/effects
 ```
+- Updating auth reducers
+```
+ni src/app/shared/types/backendErrors.interface.ts -type file
+```
 
 ### Section: Authentication
 
