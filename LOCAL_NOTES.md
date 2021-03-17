@@ -124,6 +124,14 @@ ni src/app/auth/components/login/login.component.ts -type file
 ni src/app/auth/components/login/login.component.scss -type file
 ni src/app/auth/components/login/login.component.html -type file
 ```
+- TopBar
+```
+md src/app/shared/modules/topBar/components/topBar
+ni src/app/shared/modules/topBar/topBar.module.ts -type file
+ni src/app/shared/modules/topBar/components/topBar/topBar.component.ts -type file
+ni src/app/shared/modules/topBar/components/topBar/topBar.component.scss -type file
+ni src/app/shared/modules/topBar/components/topBar/topBar.component.html -type file
+```
 
 ### Section: Feed
 
