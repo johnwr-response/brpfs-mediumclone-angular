@@ -17,7 +17,7 @@ export class GetCurrentUserEffect {
     this.actions$.pipe(
       ofType(getCurrentUserAction),
       switchMap(() => {
-        const token = localStorage.getItem('accessToken')
+        const token = this.persistenceService.get('accessToken')
         if (!token) {
           return of(getCurrentUserFailureAction)
         }
