@@ -132,6 +132,11 @@ ni src/app/shared/modules/topBar/components/topBar/topBar.component.ts -type fil
 ni src/app/shared/modules/topBar/components/topBar/topBar.component.scss -type file
 ni src/app/shared/modules/topBar/components/topBar/topBar.component.html -type file
 ```
+- Fetching current user
+```
+ni src/app/auth/store/actions/getCurrentUser.action.ts -type file
+ni src/app/auth/store/effects/getCurrentUser.effect.ts -type file
+```
 
 ### Section: Feed
 
