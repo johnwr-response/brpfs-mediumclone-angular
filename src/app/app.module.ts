@@ -1,14 +1,16 @@
 import {NgModule} from '@angular/core'
 import {BrowserModule} from '@angular/platform-browser'
 import {StoreModule} from '@ngrx/store'
-import {HttpClientModule} from '@angular/common/http'
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http'
 import {StoreDevtoolsModule} from '@ngrx/store-devtools'
 import {EffectsModule} from '@ngrx/effects'
-import {AppRoutingModule} from './app-routing.module'
-import {AppComponent} from './app.component'
+import {AppRoutingModule} from 'src/app/app-routing.module'
+import {AppComponent} from 'src/app/app.component'
 import {AuthModule} from 'src/app/auth/auth.module'
 import {environment} from 'src/environments/environment'
 import {TopBarModule} from 'src/app/shared/modules/topBar/topBar.module'
+import {PersistenceService} from 'src/app/shared/services/persistence.service'
+import {AuthInterceptor} from 'src/app/shared/services/authInterceptor.service'
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,7 +27,10 @@ import {TopBarModule} from 'src/app/shared/modules/topBar/topBar.module'
     EffectsModule.forRoot([]),
     TopBarModule,
   ],
-  providers: [],
+  providers: [
+    PersistenceService,
+    {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true},
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

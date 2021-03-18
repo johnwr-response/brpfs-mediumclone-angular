@@ -137,6 +137,10 @@ ni src/app/shared/modules/topBar/components/topBar/topBar.component.html -type f
 ni src/app/auth/store/actions/getCurrentUser.action.ts -type file
 ni src/app/auth/store/effects/getCurrentUser.effect.ts -type file
 ```
+- Auth interceptor
+```
+ni src/app/shared/services/authInterceptor.service.ts -type file
+```
 
 ### Section: Feed
 
