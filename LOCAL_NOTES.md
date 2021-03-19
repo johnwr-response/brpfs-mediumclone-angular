@@ -158,6 +158,23 @@ ni src/app/shared/modules/feed/components/feed/feed.component.ts -type file
 ni src/app/shared/modules/feed/components/feed/feed.component.scss -type file
 ni src/app/shared/modules/feed/components/feed/feed.component.html -type file
 ```
+- Preparing feed store
+```
+md src/app/shared/modules/feed/services
+ni src/app/shared/modules/feed/services/feed.service.ts -type file
+md src/app/shared/modules/feed/types
+ni src/app/shared/modules/feed/types/getFeedResponse.interface.ts -type file
+ni src/app/shared/types/article.interface.ts -type file
+ni src/app/shared/types/profile.interface.ts -type file
+md src/app/shared/modules/feed/store
+ni src/app/shared/modules/feed/store/actionTypes.ts -type file
+md src/app/shared/modules/feed/store/actions
+ni src/app/shared/modules/feed/store/actions/getFeed.action.ts -type file
+md src/app/shared/modules/feed/store/effects
+ni src/app/shared/modules/feed/store/effects/getFeed.effect.ts -type file
+ni src/app/shared/modules/feed/types/feedState.interface.ts -type file
+ni src/app/shared/modules/feed/store/reducers.ts -type file
+```
 
 ### Section: Article Pages
 
