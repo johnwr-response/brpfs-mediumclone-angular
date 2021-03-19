@@ -143,6 +143,21 @@ ni src/app/shared/services/authInterceptor.service.ts -type file
 ```
 
 ### Section: Feed
+- Planning the feed
+- Creating feed module
+```
+md src/app/globalFeed
+ni src/app/globalFeed/globalFeed.module.ts -type file
+md src/app/globalFeed/components/globalFeed
+ni src/app/globalFeed/components/globalFeed/globalFeed.component.ts -type file
+ni src/app/globalFeed/components/globalFeed/globalFeed.component.scss -type file
+ni src/app/globalFeed/components/globalFeed/globalFeed.component.html -type file
+md src/app/shared/modules/feed/components/feed
+ni src/app/shared/modules/feed/feed.module.ts -type file
+ni src/app/shared/modules/feed/components/feed/feed.component.ts -type file
+ni src/app/shared/modules/feed/components/feed/feed.component.scss -type file
+ni src/app/shared/modules/feed/components/feed/feed.component.html -type file
+```
 
 ### Section: Article Pages
 
