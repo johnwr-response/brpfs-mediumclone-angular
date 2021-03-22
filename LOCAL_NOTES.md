@@ -175,6 +175,10 @@ ni src/app/shared/modules/feed/store/effects/getFeed.effect.ts -type file
 ni src/app/shared/modules/feed/types/feedState.interface.ts -type file
 ni src/app/shared/modules/feed/store/reducers.ts -type file
 ```
+- Getting feed data
+```
+ni src/app/shared/modules/feed/store/selectors.ts -type file
+```
 
 ### Section: Article Pages
 
