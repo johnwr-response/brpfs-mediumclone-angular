@@ -179,6 +179,27 @@ ni src/app/shared/modules/feed/store/reducers.ts -type file
 ```
 ni src/app/shared/modules/feed/store/selectors.ts -type file
 ```
+- Helper components
+```
+md src/app/shared/modules/banner
+ni src/app/shared/modules/banner/banner.module.ts -type file
+md src/app/shared/modules/banner/components/banner
+ni src/app/shared/modules/banner/components/banner/banner.component.ts -type file
+ni src/app/shared/modules/banner/components/banner/banner.component.scss -type file
+ni src/app/shared/modules/banner/components/banner/banner.component.html -type file
+md src/app/shared/modules/errorMessage
+ni src/app/shared/modules/errorMessage/errorMessage.module.ts -type file
+md src/app/shared/modules/errorMessage/components/errorMessage
+ni src/app/shared/modules/errorMessage/components/errorMessage/errorMessage.component.ts -type file
+ni src/app/shared/modules/errorMessage/components/errorMessage/errorMessage.component.scss -type file
+ni src/app/shared/modules/errorMessage/components/errorMessage/errorMessage.component.html -type file
+md src/app/shared/modules/loading
+ni src/app/shared/modules/loading/loading.module.ts -type file
+md src/app/shared/modules/loading/components/loading
+ni src/app/shared/modules/loading/components/loading/loading.component.ts -type file
+ni src/app/shared/modules/loading/components/loading/loading.component.scss -type file
+ni src/app/shared/modules/loading/components/loading/loading.component.html -type file
+```
 
 ### Section: Article Pages
 
