@@ -200,6 +200,9 @@ ni src/app/shared/modules/loading/components/loading/loading.component.ts -type 
 ni src/app/shared/modules/loading/components/loading/loading.component.scss -type file
 ni src/app/shared/modules/loading/components/loading/loading.component.html -type file
 ```
+- Creating pagination
+```
+```
 
 ### Section: Article Pages
 
