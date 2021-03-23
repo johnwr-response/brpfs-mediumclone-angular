@@ -216,6 +216,16 @@ ni src/app/shared/services/utils.service.ts -type file
 yarn add query-string
 yarn add @ngrx/router-store
 ```
+- Implementing tag list
+```
+md src/app/shared/modules/tagList
+ni src/app/shared/modules/tagList/tagList.module.ts -type file
+md src/app/shared/modules/tagList/components/tagList
+ni src/app/shared/modules/tagList/components/tagList/tagList.component.ts -type file
+ni src/app/shared/modules/tagList/components/tagList/tagList.component.scss -type file
+ni src/app/shared/modules/tagList/components/tagList/tagList.component.html -type file
+ni src/app/shared/types/popularTag.type.ts -type file
+```
 
 ### Section: Article Pages
 
