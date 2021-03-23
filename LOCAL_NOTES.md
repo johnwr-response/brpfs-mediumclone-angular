@@ -201,7 +201,15 @@ ni src/app/shared/modules/loading/components/loading/loading.component.scss -typ
 ni src/app/shared/modules/loading/components/loading/loading.component.html -type file
 ```
 - Creating pagination
+- Creating pagination #2
 ```
+md src/app/shared/modules/pagination
+ni src/app/shared/modules/pagination/pagination.module.ts -type file
+md src/app/shared/modules/pagination/components/pagination
+ni src/app/shared/modules/pagination/components/pagination/pagination.component.ts -type file
+ni src/app/shared/modules/pagination/components/pagination/pagination.component.scss -type file
+ni src/app/shared/modules/pagination/components/pagination/pagination.component.html -type file
+ni src/app/shared/services/utils.service.ts -type file
 ```
 
 ### Section: Article Pages
