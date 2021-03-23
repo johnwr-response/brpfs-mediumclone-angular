@@ -4,6 +4,7 @@ import {StoreModule} from '@ngrx/store'
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http'
 import {StoreDevtoolsModule} from '@ngrx/store-devtools'
 import {EffectsModule} from '@ngrx/effects'
+import {routerReducer, StoreRouterConnectingModule} from '@ngrx/router-store'
 import {AppRoutingModule} from 'src/app/app-routing.module'
 import {AppComponent} from 'src/app/app.component'
 import {AuthModule} from 'src/app/auth/auth.module'
@@ -20,7 +21,8 @@ import {GlobalFeedModule} from 'src/app/globalFeed/globalFeed.module'
     HttpClientModule,
     AppRoutingModule,
     AuthModule,
-    StoreModule.forRoot({}),
+    StoreModule.forRoot({router: routerReducer}),
+    StoreRouterConnectingModule.forRoot(),
     StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: environment.production,

@@ -211,6 +211,11 @@ ni src/app/shared/modules/pagination/components/pagination/pagination.component.
 ni src/app/shared/modules/pagination/components/pagination/pagination.component.html -type file
 ni src/app/shared/services/utils.service.ts -type file
 ```
+- ReFetching feed
+```
+yarn add query-string
+yarn add @ngrx/router-store
+```
 
 ### Section: Article Pages
 

@@ -2,7 +2,16 @@ import {Component, Input, OnDestroy, OnInit} from '@angular/core'
 import {select, Store} from '@ngrx/store'
 import {Observable, Subscription} from 'rxjs'
 import {ActivatedRoute, Router, Params} from '@angular/router'
+import {parseUrl, stringify} from 'query-string'
 import {environment} from 'src/environments/environment'
+import {getFeedAction} from 'src/app/shared/modules/feed/store/actions/getFeed.action'
+import {GetFeedResponseInterface} from 'src/app/shared/modules/feed/types/getFeedResponse.interface'
+import {
+  errorSelector,
+  feedSelector,
+  isLoadingSelector,
+} from 'src/app/shared/modules/feed/store/selectors'
+
 @Component({
   selector: 'mc-feed',
   templateUrl: './feed.component.html',
@@ -28,7 +37,6 @@ export class FeedComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.initializeValues()
     this.initializeListeners()
-    this.fetchData()
   }
 
   ngOnDestroy(): void {
@@ -45,20 +53,24 @@ export class FeedComponent implements OnInit, OnDestroy {
   private initializeListeners(): void {
     this.queryParamsSubscription = this.route.queryParams.subscribe(
       (params: Params) => {
+        console.log('params', params)
         this.currentPage = Number(params.page || '1')
+        this.fetchFeed()
       }
     )
   }
 
-  private fetchData(): void {
-    this.store.dispatch(getFeedAction({url: this.apiUrlProps}))
+  private fetchFeed(): void {
+    const offset = this.currentPage * this.limit - this.limit
+    const parsedUrl = parseUrl(this.apiUrlProps)
+    // noinspection SpellCheckingInspection
+    const stringifiedParams = stringify({
+      limit: this.limit,
+      offset: offset,
+      ...parsedUrl.query,
+    })
+    const apiUrlWithParams = `${parsedUrl.url}?${stringifiedParams}`
+    console.log('apiUrlWithParams', apiUrlWithParams)
+    this.store.dispatch(getFeedAction({url: apiUrlWithParams}))
   }
 }
-import {getFeedAction} from 'src/app/shared/modules/feed/store/actions/getFeed.action'
-import {GetFeedResponseInterface} from 'src/app/shared/modules/feed/types/getFeedResponse.interface'
-
-import {
-  errorSelector,
-  feedSelector,
-  isLoadingSelector,
-} from 'src/app/shared/modules/feed/store/selectors'
