@@ -247,6 +247,15 @@ ni src/app/shared/modules/popularTags/components/popularTags/popularTags.compone
 ni src/app/shared/modules/popularTags/components/popularTags/popularTags.component.scss -type file
 ni src/app/shared/modules/popularTags/components/popularTags/popularTags.component.html -type file
 ```
+- Adding feed toggle
+```
+md src/app/shared/modules/feedToggle
+ni src/app/shared/modules/feedToggle/feedToggle.module.ts -type file
+md src/app/shared/modules/feedToggle/components/feedToggle
+ni src/app/shared/modules/feedToggle/components/feedToggle/feedToggle.component.ts -type file
+ni src/app/shared/modules/feedToggle/components/feedToggle/feedToggle.component.scss -type file
+ni src/app/shared/modules/feedToggle/components/feedToggle/feedToggle.component.html -type file
+```
 
 ### Section: Article Pages
 
