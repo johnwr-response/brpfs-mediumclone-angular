@@ -256,6 +256,21 @@ ni src/app/shared/modules/feedToggle/components/feedToggle/feedToggle.component.
 ni src/app/shared/modules/feedToggle/components/feedToggle/feedToggle.component.scss -type file
 ni src/app/shared/modules/feedToggle/components/feedToggle/feedToggle.component.html -type file
 ```
+- Creating other feeds
+```
+md src/app/yourFeed
+ni src/app/yourFeed/yourFeed.module.ts -type file
+md src/app/yourFeed/components/yourFeed
+ni src/app/yourFeed/components/yourFeed/yourFeed.component.ts -type file
+ni src/app/yourFeed/components/yourFeed/yourFeed.component.scss -type file
+ni src/app/yourFeed/components/yourFeed/yourFeed.component.html -type file
+md src/app/tagFeed
+ni src/app/tagFeed/tagFeed.module.ts -type file
+md src/app/tagFeed/components/tagFeed
+ni src/app/tagFeed/components/tagFeed/tagFeed.component.ts -type file
+ni src/app/tagFeed/components/tagFeed/tagFeed.component.scss -type file
+ni src/app/tagFeed/components/tagFeed/tagFeed.component.html -type file
+```
 
 ### Section: Article Pages
 
