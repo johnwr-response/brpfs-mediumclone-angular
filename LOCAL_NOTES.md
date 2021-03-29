@@ -273,6 +273,24 @@ ni src/app/tagFeed/components/tagFeed/tagFeed.component.html -type file
 ```
 
 ### Section: Article Pages
+- Creating article page
+```
+md src/app/article
+ni src/app/article/article.module.ts -type file
+ni src/app/shared/services/article.service.ts -type file
+ni src/app/shared/types/getArticleResponse.interface.ts -type file
+md src/app/article/store
+ni src/app/article/store/actionTypes.ts -type file
+md src/app/article/store/actions
+ni src/app/article/store/actions/getArticle.action.ts -type file
+md src/app/article/store/effects
+ni src/app/article/store/effects/getArticle.effect.ts -type file
+md src/app/article/types
+ni src/app/article/types/articleState.interface.ts -type file
+ni src/app/article/store/reducers.ts -type file
+ni src/app/article/store/selectors.ts -type file
+
+```
 
 ### Section: Profiles
 
