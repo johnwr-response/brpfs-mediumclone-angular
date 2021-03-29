@@ -226,6 +226,27 @@ ni src/app/shared/modules/tagList/components/tagList/tagList.component.scss -typ
 ni src/app/shared/modules/tagList/components/tagList/tagList.component.html -type file
 ni src/app/shared/types/popularTag.type.ts -type file
 ```
+- Implementing popular tags
+```
+md src/app/shared/modules/popularTags
+ni src/app/shared/modules/popularTags/popularTags.module.ts -type file
+ni src/app/shared/services/popularTags.service.ts -type file
+md src/app/shared/modules/popularTags/types
+ni src/app/shared/modules/popularTags/types/getPopularTagsResponse.interface.ts -type file
+md src/app/shared/modules/popularTags/store
+ni src/app/shared/modules/popularTags/store/actionTypes.ts -type file
+md src/app/shared/modules/popularTags/store/actions
+ni src/app/shared/modules/popularTags/store/actions/getPopularTags.action.ts -type file
+md src/app/shared/modules/popularTags/store/effects
+ni src/app/shared/modules/popularTags/store/effects/getPopularTags.effect.ts -type file
+ni src/app/shared/modules/popularTags/types/popularTagsState.interface.ts -type file
+ni src/app/shared/modules/popularTags/store/reducers.ts -type file
+ni src/app/shared/modules/popularTags/store/selectors.ts -type file
+md src/app/shared/modules/popularTags/components/popularTags
+ni src/app/shared/modules/popularTags/components/popularTags/popularTags.component.ts -type file
+ni src/app/shared/modules/popularTags/components/popularTags/popularTags.component.scss -type file
+ni src/app/shared/modules/popularTags/components/popularTags/popularTags.component.html -type file
+```
 
 ### Section: Article Pages
 
