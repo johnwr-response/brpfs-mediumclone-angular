@@ -391,6 +391,20 @@ ni src/app/shared/modules/addToFavorites/components/addToFavorites/addToFavorite
 ni src/app/shared/modules/addToFavorites/components/addToFavorites/addToFavorites.component.scss -type file
 ni src/app/shared/modules/addToFavorites/components/addToFavorites/addToFavorites.component.html -type file
 ```
+- Creating store for favorites
+```
+md src/app/shared/modules/addToFavorites/store/services
+ni src/app/shared/modules/addToFavorites/store/services/addToFavorites.service.ts -type file
+ni src/app/shared/modules/addToFavorites/store/actionTypes.ts -type file
+md src/app/shared/modules/addToFavorites/store/actions
+ni src/app/shared/modules/addToFavorites/store/actions/addToFavorites.action.ts -type file
+md src/app/shared/modules/addToFavorites/store/effects
+ni src/app/shared/modules/addToFavorites/store/effects/addToFavorites.effect.ts -type file
+
+ni src/app/shared/modules/addToFavorites/store/selectors.ts -type file
+md src/app/shared/modules/addToFavorites/store/types
+ni src/app/shared/modules/addToFavorites/store/types/addToFavoritesState.interface.ts -type file
+```
 
 ### Section: Homework
 
