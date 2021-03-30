@@ -320,11 +320,21 @@ ni src/app/shared/modules/articleForm/components/articleForm/articleForm.compone
 ni src/app/shared/types/articleInput.interface.ts -type file
 ```
 - Creating article form
+- Creating article store
 ```
-
-
-
-md src/app/editArticle
+md src/app/createArticle/services
+ni src/app/createArticle/services/createArticle.service.ts -type file
+ni src/app/shared/types/saveArticleResponse.interface.ts -type file
+md src/app/createArticle/store
+ni src/app/createArticle/store/actionTypes.ts -type file
+md src/app/createArticle/store/actions
+ni src/app/createArticle/store/actions/createArticle.action.ts -type file
+md src/app/createArticle/store/effects
+ni src/app/createArticle/store/effects/createArticle.effect.ts -type file
+md src/app/createArticle/store/types
+ni src/app/createArticle/store/types/createArticleState.interface.ts -type file
+ni src/app/createArticle/store/reducers.ts -type file
+ni src/app/createArticle/store/selectors.ts -type file
 ```
 
 ### Section: Profiles
