@@ -400,10 +400,6 @@ md src/app/shared/modules/addToFavorites/store/actions
 ni src/app/shared/modules/addToFavorites/store/actions/addToFavorites.action.ts -type file
 md src/app/shared/modules/addToFavorites/store/effects
 ni src/app/shared/modules/addToFavorites/store/effects/addToFavorites.effect.ts -type file
-
-ni src/app/shared/modules/addToFavorites/store/selectors.ts -type file
-md src/app/shared/modules/addToFavorites/store/types
-ni src/app/shared/modules/addToFavorites/store/types/addToFavoritesState.interface.ts -type file
 ```
 
 ### Section: Homework
