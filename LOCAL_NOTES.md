@@ -318,6 +318,9 @@ ni src/app/shared/modules/articleForm/components/articleForm/articleForm.compone
 ni src/app/shared/modules/articleForm/components/articleForm/articleForm.component.scss -type file
 ni src/app/shared/modules/articleForm/components/articleForm/articleForm.component.html -type file
 ni src/app/shared/types/articleInput.interface.ts -type file
+```
+- Creating article form
+```
 
 
 
