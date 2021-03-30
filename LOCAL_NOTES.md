@@ -382,6 +382,15 @@ ni src/app/settings/store/selectors.ts -type file
 ni src/app/auth/store/actions/sync.action.ts -type file
 ni src/app/auth/store/effects/logout.effect.ts -type file
 ```
+- Add to favorites
+```
+md src/app/shared/modules/addToFavorites
+ni src/app/shared/modules/addToFavorites/addToFavorites.module.ts -type file
+md src/app/shared/modules/addToFavorites/components/addToFavorites
+ni src/app/shared/modules/addToFavorites/components/addToFavorites/addToFavorites.component.ts -type file
+ni src/app/shared/modules/addToFavorites/components/addToFavorites/addToFavorites.component.scss -type file
+ni src/app/shared/modules/addToFavorites/components/addToFavorites/addToFavorites.component.html -type file
+```
 
 ### Section: Homework
 
