@@ -336,6 +336,29 @@ ni src/app/createArticle/store/types/createArticleState.interface.ts -type file
 ni src/app/createArticle/store/reducers.ts -type file
 ni src/app/createArticle/store/selectors.ts -type file
 ```
+- Update article
+```
+md src/app/editArticle
+ni src/app/editArticle/editArticle.module.ts -type file
+md src/app/editArticle/components/editArticle
+ni src/app/editArticle/components/editArticle/editArticle.component.ts -type file
+ni src/app/editArticle/components/editArticle/editArticle.component.scss -type file
+ni src/app/editArticle/components/editArticle/editArticle.component.html -type file
+md src/app/editArticle/services
+ni src/app/editArticle/services/editArticle.service.ts -type file
+md src/app/editArticle/store
+ni src/app/editArticle/store/actionTypes.ts -type file
+md src/app/editArticle/store/actions
+ni src/app/editArticle/store/actions/editArticle.action.ts -type file
+ni src/app/editArticle/store/actions/getArticle.action.ts -type file
+md src/app/editArticle/store/effects
+ni src/app/editArticle/store/effects/editArticle.effect.ts -type file
+ni src/app/editArticle/store/effects/getArticle.effect.ts -type file
+md src/app/editArticle/store/types
+ni src/app/editArticle/store/types/editArticleState.interface.ts -type file
+ni src/app/editArticle/store/reducers.ts -type file
+ni src/app/editArticle/store/selectors.ts -type file
+```
 
 ### Section: Profiles
 

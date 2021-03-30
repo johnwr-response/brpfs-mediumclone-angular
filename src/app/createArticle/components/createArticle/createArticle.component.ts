@@ -7,7 +7,7 @@ import {
   isSubmittingSelector,
   validationErrorsSelector,
 } from 'src/app/createArticle/store/selectors'
-import {createArticleAction} from '../../store/actions/createArticle.action'
+import {createArticleAction} from 'src/app/createArticle/store/actions/createArticle.action'
 
 @Component({
   selector: 'mc-create-article',

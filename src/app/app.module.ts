@@ -16,6 +16,7 @@ import {GlobalFeedModule} from 'src/app/globalFeed/globalFeed.module'
 import {YourFeedModule} from 'src/app/yourFeed/yourFeed.module'
 import {TagFeedModule} from 'src/app/tagFeed/tagFeed.module'
 import {CreateArticleModule} from 'src/app/createArticle/createArticle.module'
+import {EditArticleModule} from 'src/app/editArticle/editArticle.module'
 import {ArticleModule} from 'src/app/article/article.module'
 
 @NgModule({
@@ -37,6 +38,7 @@ import {ArticleModule} from 'src/app/article/article.module'
     YourFeedModule,
     TagFeedModule,
     CreateArticleModule,
+    EditArticleModule,
     ArticleModule,
   ],
   providers: [
