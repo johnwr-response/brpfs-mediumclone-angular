@@ -304,6 +304,25 @@ ni src/app/article/services/article.service.ts -type file
 ni src/app/article/store/actions/deleteArticle.action.ts -type file
 ni src/app/article/store/effects/deleteArticle.effect.ts -type file
 ```
+- Create article
+```
+md src/app/createArticle
+ni src/app/createArticle/createArticle.module.ts -type file
+md src/app/createArticle/components/createArticle
+ni src/app/createArticle/components/createArticle/createArticle.component.ts -type file
+ni src/app/createArticle/components/createArticle/createArticle.component.scss -type file
+ni src/app/createArticle/components/createArticle/createArticle.component.html -type file
+md src/app/shared/modules/articleForm/components/articleForm
+ni src/app/shared/modules/articleForm/articleForm.module.ts -type file
+ni src/app/shared/modules/articleForm/components/articleForm/articleForm.component.ts -type file
+ni src/app/shared/modules/articleForm/components/articleForm/articleForm.component.scss -type file
+ni src/app/shared/modules/articleForm/components/articleForm/articleForm.component.html -type file
+ni src/app/shared/types/articleInput.interface.ts -type file
+
+
+
+md src/app/editArticle
+```
 
 ### Section: Profiles
 

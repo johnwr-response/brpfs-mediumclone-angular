@@ -15,6 +15,7 @@ import {AuthInterceptor} from 'src/app/shared/services/authInterceptor.service'
 import {GlobalFeedModule} from 'src/app/globalFeed/globalFeed.module'
 import {YourFeedModule} from 'src/app/yourFeed/yourFeed.module'
 import {TagFeedModule} from 'src/app/tagFeed/tagFeed.module'
+import {CreateArticleModule} from 'src/app/createArticle/createArticle.module'
 import {ArticleModule} from 'src/app/article/article.module'
 
 @NgModule({
@@ -35,6 +36,7 @@ import {ArticleModule} from 'src/app/article/article.module'
     GlobalFeedModule,
     YourFeedModule,
     TagFeedModule,
+    CreateArticleModule,
     ArticleModule,
   ],
   providers: [
