@@ -361,6 +361,22 @@ ni src/app/editArticle/store/selectors.ts -type file
 ```
 
 ### Section: Profiles
+- Settings page
+```
+ni src/app/shared/types/currentUserInput.interface.ts -type file
+ni src/app/auth/store/actions/updateCurrentUser.action.ts -type file
+ni src/app/auth/store/effects/updateCurrentUser.effect.ts -type file
+md src/app/settings
+ni src/app/settings/settings.module.ts -type file
+md src/app/settings/components/settings
+ni src/app/settings/components/settings/settings.component.ts -type file
+ni src/app/settings/components/settings/settings.component.scss -type file
+ni src/app/settings/components/settings/settings.component.html -type file
+md src/app/settings/store/types
+ni src/app/settings/store/types/settingsState.interface.ts -type file
+ni src/app/settings/store/reducers.ts -type file
+ni src/app/settings/store/selectors.ts -type file
+```
 
 ### Section: Homework
 
