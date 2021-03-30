@@ -297,6 +297,13 @@ ni src/app/article/components/article/article.component.ts -type file
 ni src/app/article/components/article/article.component.scss -type file
 ni src/app/article/components/article/article.component.html -type file
 ```
+- Deleting article
+```
+md src/app/article/services
+ni src/app/article/services/article.service.ts -type file
+ni src/app/article/store/actions/deleteArticle.action.ts -type file
+ni src/app/article/store/effects/deleteArticle.effect.ts -type file
+```
 
 ### Section: Profiles
 
