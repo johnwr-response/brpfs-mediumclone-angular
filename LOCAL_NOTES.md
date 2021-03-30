@@ -377,6 +377,11 @@ ni src/app/settings/store/types/settingsState.interface.ts -type file
 ni src/app/settings/store/reducers.ts -type file
 ni src/app/settings/store/selectors.ts -type file
 ```
+- Settings page. View part
+```
+ni src/app/auth/store/actions/sync.action.ts -type file
+ni src/app/auth/store/effects/logout.effect.ts -type file
+```
 
 ### Section: Homework
 
