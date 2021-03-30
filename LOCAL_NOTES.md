@@ -289,7 +289,13 @@ md src/app/article/types
 ni src/app/article/types/articleState.interface.ts -type file
 ni src/app/article/store/reducers.ts -type file
 ni src/app/article/store/selectors.ts -type file
-
+```
+- Rendering article page
+```
+md src/app/article/components/article
+ni src/app/article/components/article/article.component.ts -type file
+ni src/app/article/components/article/article.component.scss -type file
+ni src/app/article/components/article/article.component.html -type file
 ```
 
 ### Section: Profiles
