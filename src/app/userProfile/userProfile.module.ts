@@ -7,6 +7,7 @@ import {UserProfileComponent} from 'src/app/userProfile/components/userProfile/u
 import {UserProfileService} from 'src/app/userProfile/services/userProfile.service'
 import {GetUserProfileEffect} from 'src/app/userProfile/store/effects/getUserProfile.effect'
 import {reducers} from 'src/app/userProfile/store/reducers'
+import {FeedModule} from '../shared/modules/feed/feed.module'
 
 const routes = [
   {path: 'profiles/:slug', component: UserProfileComponent},
@@ -19,6 +20,7 @@ const routes = [
     RouterModule.forChild(routes),
     EffectsModule.forFeature([GetUserProfileEffect]),
     StoreModule.forFeature('userProfile', reducers),
+    FeedModule,
   ],
   declarations: [UserProfileComponent],
   providers: [UserProfileService],

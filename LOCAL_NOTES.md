@@ -424,6 +424,7 @@ ni src/app/userProfile/types/userProfileState.interface.ts -type file
 ni src/app/userProfile/store/reducers.ts -type file
 ni src/app/userProfile/store/selectors.ts -type file
 ```
+- Rendering user profile
 
 ### Section: Homework
 
