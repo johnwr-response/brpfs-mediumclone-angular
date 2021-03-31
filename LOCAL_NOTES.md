@@ -401,6 +401,29 @@ ni src/app/shared/modules/addToFavorites/store/actions/addToFavorites.action.ts 
 md src/app/shared/modules/addToFavorites/store/effects
 ni src/app/shared/modules/addToFavorites/store/effects/addToFavorites.effect.ts -type file
 ```
+- Creating user profile
+```
+md src/app/userProfile
+ni src/app/userProfile/userProfile.module.ts -type file
+md src/app/userProfile/components/userProfile
+ni src/app/userProfile/components/userProfile/userProfile.component.ts -type file
+ni src/app/userProfile/components/userProfile/userProfile.component.scss -type file
+ni src/app/userProfile/components/userProfile/userProfile.component.html -type file
+md src/app/userProfile/services
+ni src/app/userProfile/services/userProfile.service.ts -type file
+md src/app/userProfile/types
+ni src/app/userProfile/types/userProfile.interface.ts -type file
+ni src/app/userProfile/types/getUserProfileResponse.interface.ts -type file
+md src/app/userProfile/store
+ni src/app/userProfile/store/actionTypes.ts -type file
+md src/app/userProfile/store/actions
+ni src/app/userProfile/store/actions/getUserProfile.action.ts -type file
+md src/app/userProfile/store/effects
+ni src/app/userProfile/store/effects/getUserProfile.effect.ts -type file
+ni src/app/userProfile/types/userProfileState.interface.ts -type file
+ni src/app/userProfile/store/reducers.ts -type file
+ni src/app/userProfile/store/selectors.ts -type file
+```
 
 ### Section: Homework
 

@@ -5,6 +5,7 @@ import {ArticleStateInterface} from 'src/app/article/types/articleState.interfac
 import {CreateArticleStateInterface} from 'src/app/createArticle/store/types/createArticleState.interface'
 import {EditArticleStateInterface} from 'src/app/editArticle/store/types/editArticleState.interface'
 import {SettingsStateInterface} from 'src/app/settings/store/types/settingsState.interface'
+import {UserProfileStateInterface} from 'src/app/userProfile/types/userProfileState.interface'
 
 export interface AppStateInterface {
   auth: AuthStateInterface
@@ -14,4 +15,5 @@ export interface AppStateInterface {
   createArticle: CreateArticleStateInterface
   editArticle: EditArticleStateInterface
   settings: SettingsStateInterface
+  userProfile: UserProfileStateInterface
 }
